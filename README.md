@@ -4,15 +4,37 @@
 
 ---
 
-**目前实现效果演示**
+**实现代码演示（未完，大部分本周补全）**
+
+```html
+<script>
+    new Vue({
+        el: '#app',
+        data () {
+            return {
+                msg: '<h1>朱昆鹏111</h1>',
+                age: 21
+            }
+        },
+        methods: {
+            clickTest () {
+                alert(`msg是：${this.$data.msg}`)
+            }
+        }
+    })
+</script>
+```
+
+**实现效果演示**
 
 [动图加载不出来，或者动图不动，可以点击此链接查看动图](https://itzkp-1253302184.cos.ap-beijing.myqcloud.com/github%E5%9B%BE%E7%89%87/miniVue/1.%E5%AE%9E%E7%8E%B0%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA.gif)
+
 
 <img src="https://itzkp-1253302184.cos.ap-beijing.myqcloud.com/github%E5%9B%BE%E7%89%87/miniVue/1.%E5%AE%9E%E7%8E%B0%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA.gif" />
 
 ---
 
-### 实现列表
+### 实现列表（大部分计划本周完成）
 
 - 模板解析（插值表达式 和 指令）✅
 - 发布订阅者模式 ✅
@@ -24,7 +46,6 @@
     - ...
 - Vue生命周期
 - ......
-
 
 
 ---
