@@ -4,6 +4,8 @@
 
 <img src="https://itzkp-1253302184.cos.ap-beijing.myqcloud.com/github%E5%9B%BE%E7%89%87/miniVue/1.%E5%AE%9E%E7%8E%B0%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA.gif" />
 
+[动图加载不出来，或者动图不动，可以点击此链接查看动图](https://itzkp-1253302184.cos.ap-beijing.myqcloud.com/github%E5%9B%BE%E7%89%87/miniVue/1.%E5%AE%9E%E7%8E%B0%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA.gif)
+
 ---
 
 ### 实现列表
