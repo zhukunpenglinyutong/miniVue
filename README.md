@@ -2,9 +2,9 @@
 
 **目前实现效果演示**
 
-<img src="https://itzkp-1253302184.cos.ap-beijing.myqcloud.com/github%E5%9B%BE%E7%89%87/miniVue/1.%E5%AE%9E%E7%8E%B0%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA.gif" />
-
 [动图加载不出来，或者动图不动，可以点击此链接查看动图](https://itzkp-1253302184.cos.ap-beijing.myqcloud.com/github%E5%9B%BE%E7%89%87/miniVue/1.%E5%AE%9E%E7%8E%B0%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA.gif)
+
+<img src="https://itzkp-1253302184.cos.ap-beijing.myqcloud.com/github%E5%9B%BE%E7%89%87/miniVue/1.%E5%AE%9E%E7%8E%B0%E6%95%88%E6%9E%9C%E6%BC%94%E7%A4%BA.gif" />
 
 ---
 
@@ -37,7 +37,9 @@
 
 ### 测试部分
 
-**测试框架选择**
+**测试框架选择：单元测试，代码覆盖率测试等，计划选择Jest（别管合不合适，我现在因为就会用这个qwq）**
+
+**CI工具：这个找找吧，我现在只会Jenkins，这个不合适，我再找下**
 
 ---
 
@@ -57,7 +59,11 @@ npm run dev // 启动一个示例
 
 ---
 
-### Vue Flow 版本实现计划
+### Vue Flow版本 核心部分实现计划
+
+---
+
+### Vue Typescript版本 核心部分实现计划
 
 
 
