@@ -7,15 +7,41 @@ class watcher {
         this.expr = expr
         this.cb = cb
 
+        Dep.target = this //
+
         // 需要把 expr 的旧值给存储起来
         this.oldValue = this.vm.$data[expr]
+
+        Dep.target = null;
     }
 
     // 对外暴露的一个方法，这个方法用于更新页面
     update () {
+        
         let oldValue = this.oldValue
         let newValue = this.vm.$data[this.expr]
-        if (oldValue != newValue) this.cb(newValue, oldValue);
+        if (oldValue != newValue) {
+            console.log('进来了')
+            this.cb(newValue, oldValue)
+        };
     }
 }
 
+
+// 依赖收集（用于管理所有的订阅者 和 通知这些订阅者）
+class Dep {
+    constructor () {
+        this.subs = []
+    }
+
+    // 添加订阅者
+    addSub (watcher) {
+        this.subs.push(watcher)
+    }
+
+    // 通知
+    notify () {
+        // 遍历所有的订阅者，调用 watcher 的 update 方法
+        this.subs.forEach(sub => sub.update())
+    }
+}

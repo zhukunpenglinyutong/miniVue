@@ -136,15 +136,24 @@ let ComileUtil = {
     // 处理 v-text 指令
     text (node, vm, attrValue) {
         node.textContent = vm.$data[attrValue]
+        new watcher(vm, attrValue, (newValue, oldValue) => {
+            node.textContent = newValue
+        })
     },
 
     // 解析 v-html 指令
     html (node, vm, attrValue) {
         node.innerHTML = vm.$data[attrValue]
+        new watcher(vm, attrValue, (newValue, oldValue) => {
+            node.innerHTML = newValue
+        })
     },
 
     // 解析 v-model 指令
     model (node, vm, attrValue) {
         node.value = vm.$data[attrValue]
+        new watcher(vm, attrValue, (newValue, oldValue) => {
+            node.value = newValue
+        })
     }
 }

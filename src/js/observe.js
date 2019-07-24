@@ -23,11 +23,14 @@ class Observe {
 
         this.walk(value) // 递归，遍历多层
 
+        let dep = new Dep()
+
         Object.defineProperty(obj, key, {
             enumerable: true,
             configurable: true,
 
             get () {
+                Dep.target &&  dep.addSub(Dep.target)
                 return value
             },
 
@@ -35,6 +38,9 @@ class Observe {
                 if (value === newValue) return;
                 if (typeof newValue === 'object') this.walk(newValue); // 如果 newValue 是一个对象，也应该对其进行劫持
                 value = newValue
+
+                // 发布通知，让所有的订阅者更新
+                dep.notify()
             }
 
         })
