@@ -21,7 +21,6 @@ class watcher {
         let oldValue = this.oldValue
         let newValue = this.vm.$data[this.expr]
         if (oldValue != newValue) {
-            console.log('进来了')
             this.cb(newValue, oldValue)
         };
     }

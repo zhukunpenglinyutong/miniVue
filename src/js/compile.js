@@ -101,6 +101,10 @@ class Compile {
         if (reg.test(txt)) {
             let expr = RegExp.$1 // $1 拿到第一个分组
             node.textContent = txt.replace(reg, this.vm.$data[expr])
+
+            new watcher(this.vm, expr, (newValue, oldValue) => {
+                node.textContent = txt.replace(reg, newValue)
+            })
         }
 
     }
