@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="app">
+        <p>大家好</p>
+        <p>msg的内容是：{{msg}}</p>
+        <p v-text='msg'></p>
+        <p v-html='msg'></p>
+        <input type="text" v-model="msg">
+        <button v-on:click="clickTest">按钮</button>
+    </div>
+
+    <script src="./src/observe.js"></script>
+    <script src="./src/compile.js"></script>
+    <script src="./src/vue.js"></script>
+    <script>
+        let vm = new Vue({
+            el: '#app',
+            data () {
+                return {
+                    msg: '<h1>朱昆鹏111</h1>',
+                    age: 21
+                }
+            },
+            methods: {
+                clickTest () {
+                    alert(`msg是：${this.$data.msg}`)
+                }
+            }
+        })
+        console.log(vm)
+    </script>
+</body>
+</html>

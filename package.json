@@ -1,0 +1,22 @@
+{
+  "name": "minivue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhukunpenglinyutong/miniVue.git"
+  },
+  "author": "Zhu Kunpeng <270750933@qq.com> (itzkp.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhukunpenglinyutong/miniVue/issues"
+  },
+  "homepage": "https://github.com/zhukunpenglinyutong/miniVue#readme"
+}
