@@ -1,3 +1,6 @@
+import { Observe } from './observe'
+import { Compile } from './compile'
+
 // 定义一个类，用于创建Vue实例
 class Vue {
     constructor (options = {}) {
@@ -16,3 +19,5 @@ class Vue {
         }
     }
 }
+
+window.Vue = Vue

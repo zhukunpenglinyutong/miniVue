@@ -1,6 +1,8 @@
+import { watcher } from './watcher'
+
 // 专门负责解析模板内容
 
-class Compile {
+export class Compile {
     /**
      * @param {} 传递的选择器
      * @param {} Vue实例
@@ -133,8 +135,6 @@ class Compile {
     }
 }
 
-
-
 let ComileUtil = {
 
     // 处理 v-text 指令
@@ -168,3 +168,7 @@ let ComileUtil = {
     // 注册 v-model 事件
 
 }
+
+// export default {
+//     Compile: Compile
+// }

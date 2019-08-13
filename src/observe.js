@@ -1,5 +1,7 @@
+import { Dep } from './watcher'
+
 // 观察者：给 data 下所有的 数据添加上 getter 和 setter
-class Observe {
+export class Observe {
     constructor (data) {
         this.data = data
         this.walk(data)
@@ -48,3 +50,7 @@ class Observe {
 
 
 }
+
+// export default {
+//     Observe: Observe
+// }

@@ -1,6 +1,6 @@
 // watcher 模板，负责把 compile模块 与 observe模块 关联起来
 // 主要作用就是，监听 某个对象是否发生变化，如果变换的话，就调用 回调函数
-class watcher {
+export class watcher {
     // vm当期实例 | data 数据名称 | cb 数据发生改变之后的回调
     constructor (vm, expr, cb) {
         this.vm = vm
@@ -28,7 +28,7 @@ class watcher {
 
 
 // 依赖收集（用于管理所有的订阅者 和 通知这些订阅者）
-class Dep {
+export class Dep {
     constructor () {
         this.subs = []
     }
