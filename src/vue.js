@@ -2,7 +2,7 @@ import { Observe } from './observe'
 import { Compile } from './compile'
 
 // 定义一个类，用于创建Vue实例
-class Vue {
+export class Vue {
     constructor (options = {}) {
         // 给Vue实例增加属性
         this.$el = options.el

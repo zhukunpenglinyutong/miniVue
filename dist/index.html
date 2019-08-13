@@ -10,7 +10,7 @@
     
     <div id="app">
         <p>大家好</p>
-        <p>msg的内容是：{{msg}}</p>
+        <p>年龄：{{age}}</p>
         <p v-text='msg'></p>
         <p v-html='msg'></p>
         <input type="text" v-model="msg">
@@ -29,7 +29,7 @@
             },
             methods: {
                 clickTest () {
-                    alert(`msg是：${this.$data.msg}`)
+                    this.$data.age += 1
                 }
             }
         })

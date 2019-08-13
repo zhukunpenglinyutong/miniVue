@@ -114,11 +114,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!********************!*\
   !*** ./src/vue.js ***!
   \********************/
-/*! no exports provided */
+/*! exports provided: Vue */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _observe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./observe */ \"./src/observe.js\");\n/* harmony import */ var _compile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./compile */ \"./src/compile.js\");\n\n\n\n// 定义一个类，用于创建Vue实例\nclass Vue {\n    constructor (options = {}) {\n        // 给Vue实例增加属性\n        this.$el = options.el\n        this.$data = options.data()\n        this.$methods = options.methods\n\n        // 监视 data 中的数据\n        new _observe__WEBPACK_IMPORTED_MODULE_0__[\"Observe\"](this.$data)\n\n        // 如果指定了 el 参数，我们就可以进行解析\n        if (this.$el) {\n            // 负责解析模板的内容（需要模板和整个Vue实例）\n            new _compile__WEBPACK_IMPORTED_MODULE_1__[\"Compile\"](this.$el, this)\n        }\n    }\n}\n\nwindow.Vue = Vue\n\n//# sourceURL=webpack:///./src/vue.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"Vue\", function() { return Vue; });\n/* harmony import */ var _observe__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./observe */ \"./src/observe.js\");\n/* harmony import */ var _compile__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./compile */ \"./src/compile.js\");\n\n\n\n// 定义一个类，用于创建Vue实例\nclass Vue {\n    constructor (options = {}) {\n        // 给Vue实例增加属性\n        this.$el = options.el\n        this.$data = options.data()\n        this.$methods = options.methods\n\n        // 监视 data 中的数据\n        new _observe__WEBPACK_IMPORTED_MODULE_0__[\"Observe\"](this.$data)\n\n        // 如果指定了 el 参数，我们就可以进行解析\n        if (this.$el) {\n            // 负责解析模板的内容（需要模板和整个Vue实例）\n            new _compile__WEBPACK_IMPORTED_MODULE_1__[\"Compile\"](this.$el, this)\n        }\n    }\n}\n\nwindow.Vue = Vue\n\n//# sourceURL=webpack:///./src/vue.js?");
 
 /***/ }),
 
