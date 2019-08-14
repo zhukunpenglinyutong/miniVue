@@ -62,7 +62,7 @@ describe('🔥  Vue.js 集成功能测试', () => {
             <input id="app-input" type="text" v-model="name">
         </div>`
     
-        new Vue({
+        let vue = new Vue({
             el: '#app',
             data () {
                 return {
@@ -74,14 +74,10 @@ describe('🔥  Vue.js 集成功能测试', () => {
         let appInput = document.getElementById('app-input')
         let appName = document.getElementById('app-name')
         
-        appInput.value = '你好世界'
-
-        // 如何模拟input输入事件呢？
-
-        console.log(appInput)
-        console.log(appName.innerHTML)
-
-        // expect(appName.innerHTML).toBe('你好世界')
+        // 如何模拟input输入事件呢？ 暂时不会，但是可以设置 改变 name 的值，看看 input 是否也跟着改变
+        vue.$data.name = '你好世界'
+        expect(appInput.value).toBe('你好世界')
+        expect(appName.innerHTML).toBe('你好世界')
 
     });
 })

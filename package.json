@@ -10,6 +10,7 @@
     "serve": "webpack-dev-server",
     "build": "webpack --config webpack.config.js",
     "test": "jest",
+    "test:w": "jest --watch",
     "test:c": "jest --coverage"
   },
   "repository": {

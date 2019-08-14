@@ -8,7 +8,7 @@ module.exports = {
   
   entry: {
     vue: './src/vue.js', // 源文件入口
-    test: './test/viewTest/index.js' // 启动测试JS
+    index: './test/viewTest/index.js' // 启动测试JS
   },
   
   // 启动一个serve
