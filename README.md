@@ -71,6 +71,7 @@ npm run test:c
 - dist 打包后实现的文件
     - vue.js 打包后的Vue文件
     - index.html 功能演示文件
+    - test.js 功能演示JS文件
 - src 源文件
 - test 测试文件（主要使用Jest进行测试）
 - ...
