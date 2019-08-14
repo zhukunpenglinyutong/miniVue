@@ -3,8 +3,9 @@
 <p align="center"><a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a></p>
 
 <p align="center">
+    <a href="javascript:;"><img src="https://img.shields.io/github/license/zhukunpenglinyutong/notes.svg" alt="朱昆鹏 MIT"></a>
     如果有新的理解，我会及时更新的，现在还未完全实现Vue的功能，并且期待大佬的批评指点，我必虚心请教，wx:lyglyglyg666666
-  <!-- <a href="https://circleci.com/gh/vuejs/vue/tree/dev"><img src="https://img.shields.io/circleci/project/github/vuejs/vue/dev.svg" alt="Build Status"></a>
+  <!--
   <a href="https://codecov.io/github/vuejs/vue?branch=dev"><img src="https://img.shields.io/codecov/c/github/vuejs/vue/dev.svg" alt="Coverage Status"></a>
   <a href="https://npmcharts.com/compare/vue?minimal=true"><img src="https://img.shields.io/npm/dm/vue.svg" alt="Downloads"></a>
   <a href="https://www.npmjs.com/package/vue"><img src="https://img.shields.io/npm/v/vue.svg" alt="Version"></a>
@@ -71,7 +72,7 @@ npm run test:c
 - dist 打包后实现的文件
     - vue.js 打包后的Vue文件
     - index.html 功能演示文件
-    - test.js 功能演示JS文件
+    - index.js 功能演示JS文件
 - src 源文件
 - test 测试文件（主要使用Jest进行测试）
 - ...
@@ -93,9 +94,9 @@ npm run test:c
 
 ---
 
-### TDD践行（2019.8.14 更新）
+### TDD践行（2019.8.14 20:31 更新）
 
-**践行TDD ---》 不断重构，不断优化，越来越好，越来越严格要求自己**
+**践行TDD ---》 虽然现在写的测试很烂，但是我还是会，不断重构，不断优化，越来越好，越来越严格要求自己**
 
 <img src="https://itzkp-1253302184.cos.ap-beijing.myqcloud.com/github%E5%9B%BE%E7%89%87/miniVue/2.%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87%E7%AD%89%E4%BF%A1%E6%81%AF.png" />
 
