@@ -9,12 +9,35 @@
 <body>
     
     <div id="app">
-        <p>大家好，这是迷你版Vue的示例代码</p>
+
+        <h1>大家好，这是迷你版Vue的示例代码</h1>
+        
+        <hr />
+        
+        <h3>😁 测试双向数据绑定：</h3>
         <p>年龄：{{age}}</p>
+
+        <hr />
+
+        <h3>😁 测试 v-text：</h3>
         <p v-text='msg'></p>
+
+        <hr />
+
+        <h3>😁 测试 v-html：</h3>
         <p v-html='msg'></p>
+
+        <hr />
+
+        <h3>😁 测试 v-model 双向数据绑定：</h3>
         <input type="text" v-model="msg">
-        <button v-on:click="clickTest">按钮</button>
+
+        <hr />
+
+        <h3>😁 测试 v-on:click 点击事件：</h3>
+        <button v-on:click="clickTest">点击年龄+1</button>
+
     </div>
+
 </body>
 </html>
