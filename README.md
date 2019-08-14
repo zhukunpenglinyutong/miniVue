@@ -80,24 +80,29 @@ npm run test:c
 
 ### 实现列表（大部分计划本周完成）
 
-- 模板解析（插值表达式 和 指令）✅
-- 发布订阅者模式 ✅
-- v-model 双向数据绑定（这块我感觉我实现的不好，我直接写到了 解析 v-model 指令 的函数中，期待指点这块） ✅
-- vm.$data && vm.$methods 挂载到 vm 上
-- Vue组件写法
-    - 基础组件
-    - 插槽
-    - ...
-- Vue生命周期
-- ......
+- [x] 模板解析（插值表达式 和 指令）
+- [x] 发布订阅者模式
+- [x] v-model 双向数据绑定
+- [ ] vm.$data && vm.$methods 挂载到 vm 上
+- [ ] Vue组件写法
+    - [ ] 基础组件
+    - [ ] slot
+    - [ ] ...
+- [ ] Vue生命周期
+- [ ] ...
 
 ---
 
-### Vue Flow版本 核心部分实现计划
+### TDD践行（2019.8.14 更新）
+
+**践行TDD ---》 不断重构，不断优化，越来越好，越来越严格要求自己**
+
+<img src="https://itzkp-1253302184.cos.ap-beijing.myqcloud.com/github%E5%9B%BE%E7%89%87/miniVue/2.%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87%E7%AD%89%E4%BF%A1%E6%81%AF.png" />
 
 ---
 
-### Vue Typescript版本 核心部分实现计划
+### Vue Flow版本 && Typescript版本 核心部分实现计划
+
 
 
 
