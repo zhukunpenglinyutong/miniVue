@@ -4,7 +4,7 @@ import { Vue } from '../src/vue'
 // 集成测试 部分
 describe('🔥  Vue.js 集成功能测试', () => {
     
-    test('测试一：模板解析 中 插值表达式是否正常解析', () => {
+    test('测试一：模板解析中 插值表达式是否正常解析', () => {
 
         document.body.innerHTML =  `<div id="app">{{name}}</div>`
     
@@ -22,7 +22,7 @@ describe('🔥  Vue.js 集成功能测试', () => {
         expect(app.innerHTML).toBe('朱昆鹏')
     });
 
-    test('测试二：模板解析中 v-on 指令是否正常解析', () => {
+    test('测试二：模板解析中 v-on指令是否正常解析', () => {
 
         document.body.innerHTML =  `<div id="app">
             <p id="app-age">{{age}}<p>
@@ -55,6 +55,35 @@ describe('🔥  Vue.js 集成功能测试', () => {
 
     });
 
+    test('测试三：双向数据绑定是否正常', () => {
+
+        document.body.innerHTML =  `<div id="app">
+            <p id="app-name">{{name}}<p>
+            <input id="app-input" type="text" v-model="name">
+        </div>`
+    
+        new Vue({
+            el: '#app',
+            data () {
+                return {
+                    name: '朱昆鹏'
+                }
+            }
+        })
+    
+        let appInput = document.getElementById('app-input')
+        let appName = document.getElementById('app-name')
+        
+        appInput.value = '你好世界'
+
+        // 如何模拟input输入事件呢？
+
+        console.log(appInput)
+        console.log(appName.innerHTML)
+
+        // expect(appName.innerHTML).toBe('你好世界')
+
+    });
 })
 
 describe('🔥  Vue.js 文件 单元测试', () => {
