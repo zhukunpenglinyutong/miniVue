@@ -107,7 +107,7 @@ npm run test:c
 
 **践行TDD ---》 虽然现在写的测试很烂，但是我还是会，不断重构，不断优化，越来越好，越来越严格要求自己**
 
-<img src="https://itzkp-1253302184.cos.ap-beijing.myqcloud.com/github%E5%9B%BE%E7%89%87/miniVue/2.%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87%E7%AD%89%E4%BF%A1%E6%81%AF.png" />
+<img src="https://itzkp-1253302184.cos.ap-beijing.myqcloud.com/github%E5%9B%BE%E7%89%87/miniVue/2.%E6%B5%8B%E8%AF%95%E8%A6%86%E7%9B%96%E7%8E%87%E7%AD%89%E4%BF%A1%E6%81%AF%2022%3A29.png" />
 
 ---
 
